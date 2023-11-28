@@ -1,0 +1,627 @@
+body{
+    font-family: 'poppins' ,'sans-serif';
+    color: white;
+    /* background:linear-gradient(rgba(255, 0, 0, 0.53),rgba(0, 0, 255, 0.457)); */
+    margin:0;
+    padding: 0;
+    background-color: rgb(41, 36, 36)
+}
+
+.frontpage{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.fullplace{
+    margin: .5vw 4vw;
+}
+
+.navbar{
+    padding-left: 4vw;
+    padding-right: 6vw;
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    width: 90%;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    /* background-color: red; */
+    transition: .5s;
+}
+.navbar.scrollcolor{
+    background-color: rgb(0, 0, 0);
+
+}
+
+
+.netflixlogo img{
+    height:auto ;
+    width: 6vw;
+}
+.browse{
+    display: none;
+}
+
+.arrownline{
+    display: none;
+}
+.navlist ul{
+    list-style-type: none;
+    display: flex;
+    gap: .9vw;
+}
+
+.navlist ul li{
+    font-size: .9vw;
+}
+
+.firstnav{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+}
+
+.secnav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap:.9vw
+}
+.secnav a{
+    font-size: 1vw;
+}
+.topicon{
+    width: 2vw;
+}
+
+.firstmovie{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    height: 35vw;
+}
+.moviediv{
+    height: 25vw;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.moviediv p{
+    text-transform: uppercase;
+    width:15vw;
+    font-size: 4vw;
+    font-weight: 800;
+    display: inline;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(180, 161, 35);
+    text-shadow: 2px 2px 2px red;
+    /* text-align: center; */
+}
+
+.playbtn{
+    display: flex;
+    /* justify-content: space-between; */
+    /* width: 100%; */
+}
+
+.playbtn button{
+    display: flex;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    padding: 0.4vw 2vw;
+    border-radius: 4px;
+    border: .2vw solid white;
+    /* width: 3vw; */
+    font-size: 1w;
+    font-weight: 600;
+}
+.btnicon{
+    margin-right:.3vw;
+    width: 2vw;
+}
+.playbtn button:last-child{
+    border:.2vw solid rgba(111, 111, 111, 0.652);
+    background-color: rgba(111, 111, 111, 0.653);
+    color: white;
+    margin-left: 3vw;
+}
+
+.moviediv span{
+width: 30vw;
+font-size: 1.5vw;
+}
+
+
+.spacediv{
+    height: 10vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+/******************************lits***************************************/
+
+.popularmovies{
+height: 15vw;
+margin-top: 4.6vw;
+margin-left: 4vw;
+}
+.popularmovies h3{
+    font-size: 1.2vw;
+}
+.movielist{
+display: flex;
+gap: 10px;
+}
+
+.moviedetails{
+    position: relative;
+    transition: 3s;
+}
+.moviedetails img{
+    z-index: 0;
+}
+
+.moviedetails:hover{
+    
+    z-index: 30;
+}
+.popularlist{
+    border-radius: 5px;
+    overflow: hidden;
+    height: 9vw;
+}
+
+.moviedetails:hover .popup{
+    
+    visibility: visible;
+    
+    
+}
+
+.popularlist img{
+    width: 16vw;
+    height: 9vw;
+}
+.popup{
+    
+    transition-delay: .6s ;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-12%,-25%);
+    height: 20vw;
+    /* width: 25vw; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-size: cover; */
+    overflow: hidden;
+    z-index: 40;
+    border-radius: 5px;
+    visibility: hidden;
+    box-shadow: 2px 2px 5px black;
+}
+.popup h2 {
+    display: inline;
+    font-size: 0.6vw;
+    width: 15vw;
+    text-align: center;
+}
+
+.popup h4 {
+    font-size: 1.2vw;
+    display: inline;
+    margin: .4vw;
+}
+.popup img{
+    height: 20vw;
+    width: 20vw;
+}
+
+.poinside{
+    background-color: rgb(51, 56, 54);
+    width: 20vw;
+    height: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.leftright{ 
+    position: relative;
+}
+
+
+.Bleft{
+    color: white;
+    background-color: rgba(237, 200, 200, 0.18);
+    height: 9vw;
+    width: 5vw;
+    position: absolute;
+    left: 0;
+    top: -9vw;
+    z-index: 20;
+    border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+}
+
+.Bright {
+    color: white;
+    background-color: rgba(237, 200, 200, 0.18);
+    height: 9vw;
+    width: 5vw;
+    position: absolute;
+    right: 0;
+    top: -9vw;
+    z-index: 20;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+
+.leftright button{
+    color: transparent;
+    background-color: transparent;
+    border: 0px solid transparent;
+}
+
+
+
+
+
+/********************video background**********/
+.firstvideo{
+    position: absolute;
+    left:0;
+    top: -7vw;
+    z-index: -2;
+    overflow: hidden;
+    height: 58vw;
+    width: 100%;
+}
+
+.videolen{
+    width: 120vw;
+}
+/****************************mute button*******************/
+.mutebtn{
+    height: 10px;
+    /* background-color: black; */
+}
+.volumebtn{
+    width: 2vw;
+
+}
+
+.mutebtn button{
+    position: absolute;
+    right: 10vw;
+    top:35vw;
+    width: 4vw;
+    height: 4vw;
+    background-color: rgba(0, 0, 0,0);
+    border:.2vw solid white;
+    border-radius: 50%;
+    padding: .3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mutebtn button:hover{
+    background-color: rgba(149, 129, 129, 0.515);
+    transition: .3s;
+    cursor:pointer;
+}
+
+
+
+/**************footer***************/
+
+.footer{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 100%;
+    grid-template-columns: 3fr 2.5fr 2.5fr 2.5fr 2.5fr 3fr;
+    /* height: 40vw; */
+} 
+.footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 9vw;
+}
+
+.footer a{
+    font-size: .9vw;
+    color: rgb(122, 120, 120);
+}
+
+.servicecode{
+    display: flex;
+    flex-direction: column;
+    margin-left: 18vw;
+    margin-top: 2vw;
+    justify-content: space-around;
+    height: 5vw;
+}
+.servicecode a{
+    border: 2px solid rgb(122, 120, 120);
+    color: rgb(122, 120, 120);
+    font-size: .8vw;
+    width: 7vw;
+    padding: .3vw;
+    text-align: center;
+}
+.servicecode span{
+    color: rgb(122, 120, 120);
+    font-size: .8vw;
+    
+}
+
+.socialmediaicons{
+    margin-left: 19vw;
+    width: 12vw;
+    display: flex;
+    justify-content: space-between;
+}
+.Sicons{
+    width: 2vw;
+
+}
+
+.f1{
+    grid-column: 2;
+}
+.f2{
+    grid-column: 3;
+}
+.f3{
+    grid-column: 4;
+}
+.f4{
+    grid-column: 5;
+}
+
+/*************************************responsive************************************/
+
+@media  screen  and (max-width:800px) {
+    
+    .netflixlogo img{
+        width: 12vw;
+        margin-top: 1vw;
+    }
+
+    .firstnav{
+        justify-content: space-between;
+        width: 25vw;
+    }
+
+    .navbar{
+        height: 7vw;
+    }
+    
+    .navlist{
+        position: fixed;
+        top: 7vw;
+        left: 6vw;
+        /* opacity: 0; */
+        display: none;
+        transition: .2s ease-in-out;
+        
+    }
+    .navlist ul{
+        background-color: rgba(0, 0, 0, 0.863);
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: .9vw;
+        justify-content: space-around; 
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        height: 45vw;
+        width: 40vw;
+    }
+
+    .navlist ul li{
+        font-size: 2vw;
+        text-align: center;
+    }
+    
+    .browse{
+        display: inline-block;
+        cursor: pointer;
+    }
+    .browse:hover + .navlist{
+        display: block;
+        /* opacity: 1;   */
+    }
+    .navlist:hover{
+        display: block; 
+    }
+    .browse h5{
+        font-size: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .arrownline{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+    }
+    .arrownline hr{
+        display: inline-block;
+        width: 40vw;
+        margin: 0;
+    }
+
+    .chevronup{
+        color: white;
+        width: 12vw;
+        height: 4vw;
+    }
+
+    .secnav{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap:.9vw
+    }
+    .secnav a{
+        font-size: 2vw;
+    }
+
+    .topicon{
+        width: 4vw;
+    }
+    /***********************title and vdeo part**************************/
+
+    .moviediv span{
+        display: none;
+    }
+
+    .firstmovie{
+        height: 40vw;
+    }
+    .moviediv p{
+        margin-top: 5vw;
+    }
+
+    /***************************movie part*********************************/
+
+    .popularlist>img {
+        width: 30vw;
+        height: 18vw;
+    }
+
+    .popularmovies {
+        height: 25vw;
+        margin-left: 4vw; 
+        margin-top: 0;  
+    }
+    .popularlist {
+        border-radius: 1px;
+        overflow: hidden;
+        height: 25vw;
+    }
+    .popularmovies h3 {
+        font-size: 2vw;
+    }
+
+    .popup{
+        height: 40vw;
+        width: 50vw;
+    }
+
+    .popup img{
+        height: 30vw;
+        width: 50vw;
+    }
+
+    .poinside{
+        width: 50vw;
+    }
+    .popup h4{
+        font-size: 3vw;
+    }
+
+    .popup h2{
+        font-size: 1.8vw;
+        width: 48vw;
+    }
+        .Bleft{
+        top: -25vw;
+        height: 18vw;
+    }
+
+         .Bright{
+             top: -25vw;
+             height: 18vw;
+         }
+
+        /***************footer****************/
+        .socialmediaicons{
+            margin: 0;
+            width: 20vw;
+            margin-top: 10vw;
+            margin-left: 4vw
+        }
+        .Sicons{
+            width: 5vw;
+        }
+
+        .footer {
+            display: grid;
+            width: 100%;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr ;
+            height: 24vw;
+        }
+        .footer div{
+            height: 12vw;
+
+            margin: 0 4.5vw;
+        }
+        .footer a{
+            font-size: 1.5vw;
+        }
+        .f1{
+            grid-column:1 /2;
+            grid-row: 1;
+        }
+        .f2{
+            grid-column: 1;
+            grid-row: 2;
+        }
+        .f3{
+            grid-column: 2;
+            grid-row: 1;
+        }
+        .f4{
+        grid-column: 2;
+            grid-row: 2;
+        }
+
+        .servicecode{
+            margin: 2vw 4.5vw;
+            height: 10vw;
+        }
+        .servicecode a{
+            font-size: 1.5vw;
+            width: 12vw;
+        }
+        .servicecode span{
+            font-size: 1vw;
+            display: flex;
+            align-items: center;
+            margin: 1vw 0;
+        }
+
+        .copyright{
+            width: 1vw;
+        }
+
+
+
+
+
+
+
+}
+
