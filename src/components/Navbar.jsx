@@ -8,7 +8,7 @@ function Navbar() {
     useEffect(()=>{
 
         window.addEventListener('scroll',handscroll)
-
+        console.log("hii user")
         return ()=>{
             window.addEventListener('scroll',handscroll)
         }
