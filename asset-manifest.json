@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/sirilca/netflix-clone/static/css/main.00fb92c9.css",
-    "main.js": "/sirilca/netflix-clone/static/js/main.9c94a640.js",
-    "static/media/Oppenheimer_New_Trailer_uYPbbksJxIg_136.mp4": "/sirilca/netflix-clone/static/media/Oppenheimer_New_Trailer_uYPbbksJxIg_136.09a91b024769b866bfc1.mp4",
-    "static/media/1200px-Logonetflix.png": "/sirilca/netflix-clone/static/media/1200px-Logonetflix.079dc7231bf4b5236284.png",
-    "index.html": "/sirilca/netflix-clone/index.html",
-    "main.00fb92c9.css.map": "/sirilca/netflix-clone/static/css/main.00fb92c9.css.map",
-    "main.9c94a640.js.map": "/sirilca/netflix-clone/static/js/main.9c94a640.js.map"
+    "main.css": "/netflix-clone/static/css/main.00fb92c9.css",
+    "main.js": "/netflix-clone/static/js/main.661b66d9.js",
+    "static/media/Oppenheimer_New_Trailer_uYPbbksJxIg_136.mp4": "/netflix-clone/static/media/Oppenheimer_New_Trailer_uYPbbksJxIg_136.09a91b024769b866bfc1.mp4",
+    "static/media/1200px-Logonetflix.png": "/netflix-clone/static/media/1200px-Logonetflix.079dc7231bf4b5236284.png",
+    "index.html": "/netflix-clone/index.html",
+    "main.00fb92c9.css.map": "/netflix-clone/static/css/main.00fb92c9.css.map",
+    "main.661b66d9.js.map": "/netflix-clone/static/js/main.661b66d9.js.map"
   },
   "entrypoints": [
     "static/css/main.00fb92c9.css",
-    "static/js/main.9c94a640.js"
+    "static/js/main.661b66d9.js"
   ]
 }
